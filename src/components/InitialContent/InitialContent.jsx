@@ -40,25 +40,20 @@ export default function InitialContent() {
                     <div key={index}>
                         <h1 className={styles.title_Description}>{text.title}</h1>
                         <p className={styles.text_Description}>{text.text}</p>
-
-                        <div className={styles.container_left}>
-                            
-                            <Link href='' className={styles.link_Btn}>{text.link}</Link>
-                        </div>
+                        <Link href='' className={styles.link_Btn}>{text.link}</Link>
                     </div>
                 ))}
             </section>
-
-
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={24}
                 slidesPerView={1}
                 loop={true}
                 autoplay={{ delay: 4000, disableOnInteraction: false }}
-            >
+                className={styles.carousel}
+               >
                 {slide.map((item) => (
-                    <SwiperSlide key={item.id}>
+                    <SwiperSlide key={item.id} className={styles.slider_Carousel}>
                         <Image
                             width={300}
                             height={300}

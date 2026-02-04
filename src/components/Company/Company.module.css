@@ -1,0 +1,217 @@
+.Company {
+    position: relative;
+    min-height: 80vh;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, var(--collor-blue-dark) 0%, var(--collor-blue) 100%);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.Company::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: gridMove 20s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes gridMove {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(50px, 50px);
+    }
+}
+
+.Company::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 30% 50%, rgba(253, 253, 253, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.CompanyAbout {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.contetLeft {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.image_Carousel {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image_Carousel:hover {
+    transform: scale(1.02);
+}
+
+.contetLeft :global(.swiper) {
+    width: 100%;
+    padding: 20px;
+}
+
+.contetLeft :global(.swiper-pagination-bullet) {
+    background: rgba(255, 255, 255, 0.5);
+    width: 12px;
+    height: 12px;
+    opacity: 0.6;
+}
+
+.contetLeft :global(.swiper-pagination-bullet-active) {
+    background: var(--collor-white);
+    opacity: 1;
+    width: 30px;
+    border-radius: 6px;
+}
+
+.contentRight {
+    position: relative;
+    color: var(--collor-white);
+}
+
+.titleCompany {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--collor-white);
+    line-height: 1.2;
+    margin: 0 0 24px 0;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.descriptionCompany {
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    color: rgba(253, 253, 253, 0.9);
+    line-height: 1.7;
+    margin: 0 0 32px 0;
+    max-width: 600px;
+}
+
+.contentRight a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    background: var(--collor-white);
+    color: var(--collor-blue-dark);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contentRight a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+    background: var(--collor-blue);
+    color: var(--collor-white);
+}
+
+@media (max-width: 1024px) {
+    .CompanyAbout {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .contetLeft {
+        order: 2;
+    }
+
+    .contentRight {
+        order: 1;
+    }
+
+    .descriptionCompany {
+        max-width: 100%;
+    }
+
+    .contentRight a {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .Company {
+        padding: 60px 20px;
+    }
+
+    .CompanyAbout {
+        gap: 40px;
+    }
+
+    .titleCompany {
+        font-size: clamp(1.5rem, 5vw, 2.2rem);
+        margin-bottom: 20px;
+    }
+
+    .descriptionCompany {
+        font-size: 1rem;
+        margin-bottom: 28px;
+    }
+
+    .contentRight a {
+        padding: 12px 28px;
+        font-size: 0.95rem;
+    }
+
+    .image_Carousel {
+        max-width: 100%;
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Company {
+        padding: 50px 15px;
+    }
+
+    .titleCompany {
+        margin-bottom: 16px;
+    }
+
+    .descriptionCompany {
+        font-size: 0.95rem;
+        margin-bottom: 24px;
+    }
+
+    .contentRight a {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+}

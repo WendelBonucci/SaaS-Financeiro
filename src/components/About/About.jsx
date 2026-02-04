@@ -1,11 +1,23 @@
-import React from 'react'
+"use client"
+import { useEffect } from 'react'
 import styles from './About.module.css'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 import { FaMoneyCheckAlt, FaRegNewspaper, FaUserCog } from "react-icons/fa";
 import { AiFillControl } from "react-icons/ai";
 import { MdOutlinePointOfSale, MdAccountBalance } from "react-icons/md";
 import Link from 'next/link';
 
 export default function About() {
+    useEffect(() => {
+        Aos.init({
+            duration: 700,
+            easing: 'ease-in-out',
+            once: true,
+        })
+    })
+
     const dt_About = [
         {
             icon: <MdAccountBalance />,
@@ -54,7 +66,12 @@ export default function About() {
             </div>
             <section className={styles.contentAbout}>
                 {dt_About.map((item, index) => (
-                    <div key={index} className={styles.card}>
+                    <div
+                        key={index}
+                        className={styles.card}
+                        data-aos="fade-up"
+                        data-aos-delay={index * 100}
+                    >
 
                         <div className={styles.cardIcon}>
                             {item.icon}
