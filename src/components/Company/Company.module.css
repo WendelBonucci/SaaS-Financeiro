@@ -64,14 +64,21 @@
     user-select: none;
 }
 
+.carosuel {
+    border-radius: 16px;
+    user-select: none;
+}
+
+.slider_Carousel {
+    border-radius: 16px;
+}
+
 .image_Carousel {
     width: 100%;
     height: auto;
     max-width: 600px;
+    border-radius: 16px;
     border-radius: 20px;
-    box-shadow:
-        0 20px 60px rgba(0, 0, 0, 0.3),
-        0 0 0 1px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -169,10 +176,18 @@
 @media (max-width: 768px) {
     .Company {
         padding: 60px 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
     }
 
     .CompanyAbout {
         gap: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
     }
 
     .titleCompany {
@@ -198,7 +213,11 @@
 
 @media (max-width: 480px) {
     .Company {
+        width: 100%;
         padding: 50px 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     .titleCompany {

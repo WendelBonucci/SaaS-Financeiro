@@ -61,7 +61,7 @@ export default function About() {
         <section className={styles.About} id='about'>
             <div className={styles.containerTitle}>
                 <h1 className={styles.titleAbout}>
-                    O <span className={`${styles.titleAbout} ${styles.colorAltern}`}>Gestory</span> oferece as funcionalidades essenciais para impulsionar os resultados do seu negócio.
+                    O <span className={`${styles.titleAbout} ${styles.colorAltern}`}>Korivo</span> oferece as funcionalidades essenciais para impulsionar os resultados do seu negócio.
                 </h1>
             </div>
             <section className={styles.contentAbout}>

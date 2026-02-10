@@ -1,6 +1,14 @@
 .container_Logo {
     width: 200px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+    .ImageLogo {
+        width: 100%;
+    }
 }
+
 .title_Logo {
     text-decoration: none;
     color: var(--collor-blue-dark);

@@ -13,8 +13,8 @@ import Link from 'next/link'
 export default function InitialContent() {
     const v_text = [
         {
-            title: 'Gestory - Sistema Financeiro',
-            text: 'Somos uma empresa de tecnologia e desenvolvimento que entrega a solução certa para você por meio da inovação tecnológica.',
+            title: 'Korivo - Gestão Empresarial',
+            text: 'Sistema moderno e automatizado de gerenciamento empresarial, com dashboards personalizados em tempo real para uma visão estratégica e eficiente do seu negócio.',
             link: 'Experimente grátis por 1 mês'
         }
     ]
@@ -51,7 +51,7 @@ export default function InitialContent() {
                 loop={true}
                 autoplay={{ delay: 4000, disableOnInteraction: false }}
                 className={styles.carousel}
-               >
+            >
                 {slide.map((item) => (
                     <SwiperSlide key={item.id} className={styles.slider_Carousel}>
                         <Image

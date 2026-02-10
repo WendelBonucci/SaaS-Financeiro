@@ -1,0 +1,56 @@
+.sideBar {
+    position: relative;
+}
+
+.Menu {
+    position: fixed;
+    top: 0.6rem;
+    right: 1.7rem;
+    z-index: 1001;
+    width: 2rem;
+    height: 2rem;
+    background: rgba(243, 243, 243, 0.945);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.35rem;
+    transition: all 0.2s ease;
+
+    &.Menu:hover {
+        background-color: rgba(13, 13, 13, 0.95);
+        background-color: var(--collor-blue);
+        transform: scale(1.01);
+    }
+
+    .menuLine {
+        width: 1rem;
+        height: 2px;
+        border-radius: 5px;
+        background-color: var(--collor-primary-black);
+    }
+}
+
+.Overlay {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 13, 13, 0.7);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+
+.overlayActive {
+    opacity: 1;
+    visibility: visible;
+}

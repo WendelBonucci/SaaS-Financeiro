@@ -24,7 +24,7 @@ export default function Company() {
     const text = [
         {
             title: 'A desorganização está atrapalhando os resultados da sua empresa?',
-            description: 'Não se preocupe mais! Com o Gestory, você tem controle total do estoque da sua empresa, cadastro de clientes, relatórios e dashboards interativos para acompanhar suas finanças, controlar receitas e despesas, além de gerenciar contas a pagar e a receber.',
+            description: 'Não se preocupe mais! Com o Korivo, você tem controle total do estoque da sua empresa, cadastro de clientes, relatórios e dashboards interativos para acompanhar suas finanças, controlar receitas e despesas, além de gerenciar contas a pagar e a receber.',
             link: 'Dê o próximo passo!'
         }
     ]
@@ -52,7 +52,9 @@ export default function Company() {
                         slidesPerView={1}
                         loop={true}
                         autoplay={{ delay: 4000, disableOnInteraction: false }}
-                        className=''
+                        className={styles.carosuel}
+                        data-aos="fade-up"
+                        data-aos-delay={100}
                     >
                         {slide.map((item) => (
                             <SwiperSlide key={item.id} className={styles.slider_Carousel}>
@@ -74,7 +76,7 @@ export default function Company() {
                             key={index}
                             className={''}
                             data-aos="fade-up"
-                            data-aos-delay={index * 100}>
+                            data-aos-delay={100}>
                             <h1 className={styles.titleCompany}>{text.title}</h1>
                             <p className={styles.descriptionCompany}>{text.description}</p>
                             <Link href=''>{text.link}</Link>

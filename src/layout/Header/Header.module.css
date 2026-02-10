@@ -6,6 +6,7 @@
     z-index: 998;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     height: 55px;
+    display: flex;
 
     .scrollled_Header {
         background-color: beige;
