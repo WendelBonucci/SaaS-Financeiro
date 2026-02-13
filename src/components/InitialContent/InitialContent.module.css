@@ -19,7 +19,7 @@
 }
 
 .slider_Carousel {
-    border-radius: 16px;
+    border-radius: 12px;
     user-select: none;
 }
 
@@ -59,7 +59,7 @@
     justify-content: center;
     width: 245px;
     height: 45px;
-    border-radius: 30px;
+    border-radius: 15px;
     background-color: var(--collor-blue);
     color: var(--collor-white);
     text-decoration: none;
@@ -73,7 +73,7 @@
 }
 
 .carousel {
-    border-radius: 16px;
+    border-radius: 12px;
 }
 
 .image_Carousel {
@@ -81,7 +81,7 @@
     height: auto;
     max-width: 500px;
     object-fit: contain;
-    border-radius: 16px;
+    border-radius: 12px;
     box-shadow: 0 10px 40px rgba(13, 13, 13, 0.1);
     transition: transform 0.4s ease;
     cursor: pointer;
@@ -101,7 +101,10 @@
 
 @media (max-width: 1400px) {
     .container_Carousel {
+
         gap: 3rem;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .description_Fixed {
@@ -119,6 +122,8 @@
 
 @media (max-width: 1024px) {
     .container_Carousel {
+        display: flex;
+        flex-direction: column-reverse;
         grid-template-columns: 1fr;
         gap: 3rem;
         padding: 4rem 2rem;
@@ -153,6 +158,8 @@
 
 @media (max-width: 768px) {
     .container_Carousel {
+        display: flex;
+        flex-direction: column-reverse;
         padding: 3rem 1.5rem;
         gap: 2.5rem;
     }
@@ -177,6 +184,8 @@
 
 @media (max-width: 480px) {
     .container_Carousel {
+        display: flex;
+        flex-direction: column-reverse;
         padding: 2.5rem 1rem;
         gap: 2rem;
     }
