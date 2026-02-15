@@ -4,6 +4,7 @@ import Range from "@/utils/Range/Range";
 import About from "@/components/About/About";
 import Company from "@/components/Company/Company";
 import Solution from "@/components/SolutionDash/Solution";
+import Reviews from "@/components/Reviews/Reviews";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Company />
       <Solution />
+      <Reviews />
     </div>
   );
 }

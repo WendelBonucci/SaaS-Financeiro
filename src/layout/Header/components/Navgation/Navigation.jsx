@@ -10,11 +10,11 @@ export default function Navigation({ isOpen, onClose }) {
     },
     {
       label: "Soluções",
-      href: "/#solutions",
+      href: "#solutions",
     },
     {
-      label: "Base",
-      href: "/#cards-services",
+      label: "Dashboards",
+      href: "#dashboard",
     },
     {
       label: "Valores",

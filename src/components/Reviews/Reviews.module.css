@@ -1,0 +1,165 @@
+.ReviewsContainer {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    background: var(--collor-white);
+}
+
+.boxTitle {
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boxStar {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 24px;
+    font-size: 24px;
+    color: #FFB800;
+    filter: drop-shadow(0 2px 4px rgba(255, 184, 0, 0.3));
+}
+
+.titleReviews {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--collor-primary-black);
+    margin: 0;
+}
+
+.colorAlt {
+    color: var(--collor-blue-dark);
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.containerCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.Cards {
+    background: var(--collor-white);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(140, 140, 140, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Cards:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(4, 138, 221, 0.15);
+    border-color: var(--collor-blue);
+}
+
+.topCard {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(140, 140, 140, 0.1);
+}
+
+.logo {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--collor-grandient-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textsCards {
+    flex: 1;
+    min-width: 0;
+}
+
+.textsCards h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--collor-primary-black);
+    margin: 0 0 4px 0;
+    line-height: 1.3;
+}
+
+.subtitle {
+    font-size: 0.875rem;
+    color: var(--collor-gray);
+    margin: 0;
+    font-weight: 500;
+}
+
+.contentBottomCard {
+    flex: 1;
+}
+
+.contentBottomCard p {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--collor-primary-black);
+    margin: 0;
+    opacity: 0.85;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .ReviewsContainer {
+        padding: 60px 16px;
+    }
+
+    .boxTitle {
+        margin-bottom: 40px;
+    }
+
+    .containerCards {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .Cards {
+        padding: 24px;
+    }
+
+    .topCard {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .logo {
+        width: 56px;
+        height: 56px;
+    }
+}
+
+@media (max-width: 480px) {
+    .boxStar {
+        font-size: 20px;
+    }
+
+    .Cards {
+        padding: 20px;
+    }
+}

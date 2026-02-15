@@ -25,7 +25,7 @@ export default function Solution() {
     ]
 
     return (
-        <section className={styles.Solution}>
+        <section className={styles.Solution} id='dashboard'>
             <div className={styles.divisionContent}>
                 <article
                     className={styles.SolutionDescription}

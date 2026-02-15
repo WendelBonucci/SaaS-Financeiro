@@ -43,7 +43,7 @@ export default function Company() {
     ]
 
     return (
-        <section className={styles.Company}>
+        <section className={styles.Company} id='solutions'>
             <div className={styles.CompanyAbout}>
                 <div className={styles.contetLeft}>
                     <Swiper

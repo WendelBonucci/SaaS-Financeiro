@@ -4,6 +4,7 @@
     padding: 80px 20px;
     background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
     overflow: hidden;
+    user-select: none;
 }
 
 .About::before {

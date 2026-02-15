@@ -8,6 +8,7 @@
     background: var(--collor-white);
     position: relative;
     overflow: hidden;
+    user-select: none;
 }
 
 .Solution::before {

@@ -2,7 +2,6 @@
 import React from 'react'
 import styles from './InitialContent.module.css'
 import Image from 'next/image'
-
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import 'swiper/css'
