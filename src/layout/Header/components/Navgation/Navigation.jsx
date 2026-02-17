@@ -6,15 +6,15 @@ export default function Navigation({ isOpen, onClose }) {
   const dt_links = [
     {
       label: "Serviço",
-      href: "#about"
+      href: "/#about"
     },
     {
       label: "Soluções",
-      href: "#solutions",
+      href: "/#solutions",
     },
     {
       label: "Dashboards",
-      href: "#dashboard",
+      href: "/#dashboard",
     },
     {
       label: "Valores",
@@ -23,7 +23,7 @@ export default function Navigation({ isOpen, onClose }) {
     {
       label: "Contato",
       href: "/#quem-somos"
-    },
+    },  
   ];
 
   const handleLinkClick = () => {

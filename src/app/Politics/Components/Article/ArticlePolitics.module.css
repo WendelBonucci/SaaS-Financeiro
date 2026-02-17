@@ -45,7 +45,7 @@
     color: var(--collor-gray);
     margin: 0;
     white-space: pre-line;
-}
+}   
 
 @media (max-width: 768px) {
     .ArticlePolitics {
