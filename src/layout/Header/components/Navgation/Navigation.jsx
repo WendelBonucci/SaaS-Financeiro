@@ -21,7 +21,7 @@ export default function Navigation({ isOpen, onClose }) {
       href: "/#quem-somos"
     },
     {
-      label: "Contato",
+      label: "Suporte",
       href: "/#quem-somos"
     },  
   ];

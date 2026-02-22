@@ -34,3 +34,9 @@
     font-weight: 500;
     color: var(--collor-white);
 }
+
+@media (max-width: 748px) {
+    .container_Range {
+        display: none;
+    }
+}
